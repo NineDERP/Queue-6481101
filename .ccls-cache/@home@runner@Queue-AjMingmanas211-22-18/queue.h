@@ -38,7 +38,7 @@ void Queue::enqueue(int x,int y) {
     //2.2 connect tail
   }
    cout<<"my order is "<<x<<endl;
-   
+   if(y==0) cout<<"please input amount before x"<<endl;
 // 3 change tail
    tailPtr=new_node;
 // 4. increase size
@@ -76,4 +76,6 @@ if(headPtr->get_ordrnum()==1)//ramen
     else if (headPtr->get_ordrnum()==3)//Fried Chicken
     cout<<"Fried Chicken"<<endl;
     else cout<<"We don't have that item"<<endl;
+if(headPtr->getqty()<=0)
+  cout<<"invalid amout"<<endl;
 }

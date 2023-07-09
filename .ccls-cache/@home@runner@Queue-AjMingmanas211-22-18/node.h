@@ -13,6 +13,7 @@ public:
 	void set_next(NODE *);
 	NODE* get_next();
   int get_ordrnum(){return ordernum;} 
+  int getqty(){return qty;}
 };
 typedef NODE* NodePtr;
 
