@@ -25,7 +25,7 @@ Queue::~Queue(){
   cout<<"There are "<<n<<" ppl left in queue"<<endl;
   //while(size>0)
   for(i=0;i<n;i++)
-    dequeue();
+    dequeue(); 
 
 }
 void Queue::enqueue(int x,int y) {
