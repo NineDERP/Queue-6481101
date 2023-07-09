@@ -8,6 +8,7 @@ public:
   void enqueue(int,int);
   int dequeue();
   void printorder();
+  int getsize(){return size;}
   Queue();
   ~Queue(); // dequeue all
 };
@@ -26,7 +27,6 @@ Queue::~Queue(){
   //while(size>0)
   for(i=0;i<n;i++)
     dequeue(); 
-
 }
 void Queue::enqueue(int x,int y) {
   NodePtr new_node = new NODE(x,y); // 1.Create

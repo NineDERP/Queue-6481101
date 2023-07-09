@@ -8,7 +8,7 @@ Queue q;
   for( i=1;i<argc;i++){
     if(argv[i][0]=='x'){
    
-    
+    if(q.getsize()>0){
       cout<<"customer number "<<x+1<<endl;
       q.printorder();
      price = q.dequeue();
@@ -26,7 +26,7 @@ Queue q;
       //ask the customer to pay 
       x++;
        }
-       
+       }
        } 
     else{
       q.enqueue(atoi(argv[i]),atoi(argv[i+1]));
